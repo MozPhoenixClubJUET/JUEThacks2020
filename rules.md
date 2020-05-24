@@ -48,4 +48,4 @@ The competition is just a part of the hackathon. To make the most out of the eve
 
 Happy Hacking from the JUEThacks Organizers!
 
-![bad]()
+![bad](https://github.com/MozPhoenixClubJUET/JUEThacks2020/blob/master/bad.gif)

@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% block title %}Predict{% endblock %}
+{% block main %}
+          <h2 class="mt-3">Coronavirus Predictor</h2>
+          <form method="POST">
+            <div class="form-group">
+              <label for="fever">Body Temperature</label>
+              <input required type="range" min='96' max='105' value='98' class="form-control" id="fever" name="fever">
+              <output id='feverOut' name='feverOut' for='fever'>98°F</output>
+            </div>
+            
+            <div class="form-group">
+                <label for="fever">Age</label>
+                <input required type="number" min='0' max='130' class="form-control" id="age" name="age" placeholder="Enter your age">
+              </div>
+           
+            <label for="pain">Body Pain</label><br/>
+            <div class="form-check mb-2">
+                <input type="radio" class='form-check-input' checked  id="nopain" name="pain" value="0">
+                <label class='form-check-label' for="nopain" >None</label><br/>
+                <input type="radio" class='form-check-input' id="severepain" name="pain" value="1">
+                <label class='form-check-label' for="severepain">Severe</label><br/>
+            </div>
+            
+            <label for="runnyNose">Runny Nose</label>
+            <div class="form-check mb-2">
+                <input type="radio" class='form-check-input' checked id="runnyn" name="runnyNose" value="0">
+                <label class='form-check-label' for="runnyn">No</label><br/>
+                <input type="radio" class='form-check-input' id="runnyy" name="runnyNose" value="1">
+                <label class='form-check-label' for="runnyy">Yes</label><br/>
+              </div>
+              
+              <div class="form-group">
+                <label for="diffBreath">Difficulty in Breathing</label>
+                <select  class="form-control custom-select " name="diffBreath" id="diffBreath">
+                  <option value="0">No</option>
+                  <option value="1">Little</option>
+                  <option value="2">Severe</option>
+                </select>
+              </div>
+        
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+{% endblock %}
+{% block scripting %}
+document.getElementById('fever').oninput = function() {
+    document.getElementById('feverOut').value = this.value + '°F';
+};
+{% endblock %}

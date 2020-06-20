@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% block title %}Home{% endblock %}
+{% block main %}
+<h2 class="mt-3">Coronavirus Predictor</h2>
+<h3>Welcome!</h3>
+<p>COVID-19 has turned the world upside down in 2020.
+To stay safe and healthy is a major concern.</p>
+<p>How safe are you?</p>
+<p><a href='/predict' class='btn btn-success'>Proceed to the Predictor</a></p>
+<h3>Headlines</h3>
+<p id='headlines'></p>
+{% endblock %}
+{% block scripting %}
+$(function() {
+    let news = $('#headlines');
+    news.text('Fetching news...');
+    $.getJSON('/news.json', {key: {{ keyval }}}, function(data) {
+        // news.text(JSON.stringify(data));
+        news.text('Latest COVID-19 news:');
+        if (data.status === 'ok') {
+            let articles = data.articles;
+            let listOfArticles = $('<ul></ul>');
+            news.append(listOfArticles);
+            if (articles.length > 5)
+                articles = articles.slice(0, 5);
+            for (let article of articles) {
+                let articleElem = $('<a></a>'), listItem = $('<li></li>');
+                articleElem.attr({ href: article.url });
+                articleElem.text(article.title);
+                listItem.append(articleElem);
+                listOfArticles.append(listItem);
+            }
+        } else {
+            news.text('Error in getting headlines.');
+        }
+    })
+});
+{% endblock %}

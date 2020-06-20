@@ -2,6 +2,8 @@
 
  A simple web application that predicts the chances for a person's being infected by COVID-19 based on symptoms.
  
+ [Preview on Heroku](http://covid-predict-app.herokuapp.com)
+ 
  ## Technologies used
  
  - HTML, CSS, and JavaScript for the public webpages.

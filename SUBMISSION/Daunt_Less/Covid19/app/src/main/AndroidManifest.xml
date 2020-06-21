@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.covid_19">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".webActivity"></activity>
+        <activity android:name=".whoActivity" />
+        <activity android:name=".DietActivity" />
+        <activity android:name=".DistrictActivity" />
+        <activity android:name=".modified_dashboard" />
+        <activity android:name=".talk_to_us" />
+        <activity android:name=".stateActivity" />
+        <activity android:name=".VerificationCode" />
+        <activity android:name=".VerificationPhone" />
+        <activity android:name=".dashboardActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Covid19Activity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

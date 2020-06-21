@@ -66,7 +66,7 @@ team = [
     },
     {
         'name': 'Sushant Sharma',
-        'img': 'sushant.jpeg',
+        'img': 'sushant.jpg',
         'desc': 'Hey! I\'m Sushant. Currently I\'m pursuing engineering. I have keen interest in machine learning, but at present I have developed some websites and some Android apps using flutter.',
         'url': 'http://'
     }

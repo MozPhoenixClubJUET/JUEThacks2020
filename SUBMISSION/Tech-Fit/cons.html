@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vcsd</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 10px 20px 12px 20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+#a1
+{
+  background-color:#00FFCC;
+  text-align: center;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background
+d-color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1 id="a1">CONSULT DOCTORS ONLINE</h1>
+<br><br>
+<img src="https://arkvalleyvoice.com/wp-content/uploads/2020/03/Dr.-on-Demand.jpg" style="width: 100%">
+<form>
+  <h3 style="background-color: ">Search your doctor:</h3>
+  <input type="text" name="search" placeholder="Search By : Doctor,Specialties,Disease & Treatment">
+</form>
+<br>
+<br>
+<h3 class="u">Top Specialization</h3>
+<div class="navbar">
+  <a class="active" href="#">Neurology</a> 
+  <a href="#">Cardiology</a> 
+  <a href="#">Psyhciatry</a> 
+  <a href="#">Gynaecology
+</a>
+<a href="">Urology</a>
+<a href="">ENT</a>
+<a href="">Paediatrics</a>
+<a href="">Gastroenterology</a>
+
+
+</body>
+
+
+</html>

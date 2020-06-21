@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+<link rel="stylesheet" href="{{url_for('static', filename='about.css')}}" type="text/css">
+<link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}">
+</head>
+<body>
+  <div class="header">
+          <div class="navbar">
+              <div class="logo">
+                <img src="{{url_for('static', filename='logo1.png')}}" height="200px" width="300px"  />
+                <!-- <h2>Crafter's Mask Detector</h2> -->
+              </div>
+              <div class="menu">
+                  <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('service') }}">Services</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+
+
+                  </ul>
+              </div>
+          </div>
+      </div>
+<div class="container1">
+    <h2> Our Team</h2>
+<p style="font-weight:400">
+The Crafter's Mask Detector is the result of the combined efforts of all the team members of Code Crafters, Our skilled team members have made every bit of this module with perfection at its peak!
+</p>
+</div>
+
+<div class="container2">
+<div id="box">
+<center>
+<img src="{{url_for('static', filename='harsh.jpeg')}}" alt="name" id="one">
+<br><br>
+<h2>Harsh Modi</h2>
+<h3>Front End Developer</h3>
+</center>
+<br><br>
+Implemented Front end using HTML, CSS & Bootstrap.
+Created cards, Banners, Navigation bar, Footer, Dynamic backgrounds, Informational Components, Containers & Custom component to integrate various services to the website.
+<br><br>
+<center>
+<div class="flex-center">
+  <i class="fa fa-github fa-2x icon-3d" ></i>
+  <i class="fa fa-facebook fa-2x icon-3d"></i>
+  <i class="fa fa-instagram fa-2x icon-3d"></i>
+
+</div>
+</center>
+</div>
+
+
+    <div id="box">
+      <center>
+        <img src="{{url_for('static', filename='gupta.jpeg')}}" alt="name" id="one">
+        <br><br>
+        <h2>Abhishek Gupta</h2>
+        <h3>Front End Developer</h3>
+      </center><br><br>
+      Implemented Front-End using, HTML, CSS & CSS Animations.
+      Created motions, keyframes, dynamic cards, navigation bars, custom buttons and video backgrounds to offer an amazing user experience.
+      <br><br><br>
+      <center>
+      <div class="flex-center">
+        <i class="fa fa-github fa-2x icon-3d" ></i>
+        <i class="fa fa-facebook fa-2x icon-3d"></i>
+        <i class="fa fa-instagram fa-2x icon-3d"></i>
+
+      </div>
+    </center>
+        </div>
+
+        <div id="box">
+          <center>
+            <img src="{{url_for('static', filename='sharma.jpeg')}}" alt="name" id="one">
+
+        <br><br>
+        <h2>Abhishek Sharma</h2>
+        <h3>Animation, logo & Voice Assistant Developer</h3>
+        <br>
+      </center>
+      Designed complex animations using blender including Texturing, Shading, 3D Modelling, Raster Graphic Editing, UV unwrapping, and Sculpting. Created Logo for the website to enhance the creativity of it.
+	    Developed an AI Voice Assistant to integrate voice to ML Model.
+      <br>
+      <center>
+      <div class="flex-center">
+        <i class="fa fa-github fa-2x icon-3d" ></i>
+        <i class="fa fa-facebook fa-2x icon-3d"></i>
+        <i class="fa fa-instagram fa-2x icon-3d"></i>
+
+      </div>
+    </center>
+        </div>
+
+
+
+            <div id="box">
+              <center>
+                <img src="{{url_for('static', filename='ishaan.jpg')}}" alt="name" id="one">
+               <br><br>
+               <h2>Ishaan Dwivedi</h2>
+               <h3>Machine Learning Model, Open CV & Voice Assistant Developer</h3>
+             </center>
+             Developed an accurate ML Model to detect mask on faces, used open source computer vision to detect people's faces and predict the output
+             Also integrated the python ML programme to front-end using flask & Integrated the AI Voice Assistant to the module.
+                <center>
+              <div class="flex-center">
+                <i class="fa fa-github fa-2x icon-3d" ></i>
+                <i class="fa fa-facebook fa-2x icon-3d"></i>
+                <i class="fa fa-instagram fa-2x icon-3d"></i>
+
+              </div>
+            </center>
+
+               </div>
+             </div>
+
+<br><br>
+</div>
+</body>
+</html>

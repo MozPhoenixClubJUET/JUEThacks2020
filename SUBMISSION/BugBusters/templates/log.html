@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block title %}Log{% endblock %}
+{% block main %}
+<h2 class="mt-3">Coronavirus Predictor</h2>
+<p>10 latest queries:</p>
+<p>
+    {% if items %}
+    <table class='table table-striped'>
+       <thead class='thead-dark bg-secondary'>
+           <tr>
+               <th>Parameters</th>
+               <th>Prediction</th>
+           </tr>
+       </thead>
+       <tbody>
+           {% for item in items %}
+           <tr>
+               <td class="table-{% if item[2] %}danger{% else %}success{% endif %}">{{ item[0] }}</td>
+               <td class="table-{% if item[2] %}danger{% else %}success{% endif %}">{{ item[1] }}</td>
+           </tr>
+           {% endfor %}
+       </tbody>
+    </table>
+    {% else %}
+    No query history.
+    {% endif %}
+</p>
+{% endblock %}

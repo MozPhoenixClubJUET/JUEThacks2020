@@ -83,7 +83,7 @@ Authors (BugBusters):
  - Sushant Sharma
  - [Paridhi Malav](https://github.com/paridhi1314)
 
-Favicon obtained from https://findicons.com.
+Favicon obtained from https://findicons.com.  
 News API from http://newsapi.org.
 
 ---

@@ -61,7 +61,7 @@ team = [
     {
         'name': 'Ritesh Yadav',
         'img': 'ritesh.jpeg',
-        'desc': 'A F/OSS enthusiast, trying to contribute to open source projects and communities.<br/>Android Developer | Full Stack Web Developer',
+        'desc': 'A F/OSS enthusiast, trying to contribute to open source projects and communities.<br/>Kaggle Expert | Android Developer | Full Stack Web Developer',
         'url': 'https://github.com/DARK-art108'
     },
     {

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>juet hackathon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+		
+	</style>
+	<link rel="stylesheet" type="text/css" href="je.css">
+</head>
+<body>
+	<div class="header">
+         <img width="400" src=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReQUoBkAx6nF-aV2EWFgx6coxgCFr_o_BCyTbYAVwRhMQwTDzQ&usqp=CAU/>
+          <h1 class="t1">healthcare</h1>
+    </div>
+<ul>       
+  <li><a class="active" href="#home">HOME</a></li>
+  <li><a href="serives at home.html" target="_blank">Services At Home</a></li>
+  <li><a href="cons.html" target="_blank">CONSULTATION</a> </li>
+  <li><a href="rs.html">COVID ALERT</a> </li>
+  <li><a href="abfinal.html">About us</a> </li>
+  <li><a href="contactfinal.html">Contact</a></li>
+  
+  <li style="float:right"><a class="active" href= "login.html">LOGIN</a></li>
+
+</ul>  
+<br>
+<br>
+<br>
+ 
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="https://hcah.in/wp-content/uploads/2018/10/banner.png"style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://mercyhealthsystem.org/wp-content/uploads/2020/03/COVID-19-Graphic-web-banner-1024x358.jpg" style="width:100%">
+  
+</div>
+
+     <div class="mySlides fade">
+  
+    <img src="https://yourwellnessnerd.com/wp-content/uploads/2019/10/online-physiotherapy-consultation-book-now-banner.png" style="width:100%">
+
+     </div>
+
+</div>
+   <div class="mySlides fade">
+   	<img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_1440,f_auto,ar_2880:595,q_auto:best,f_auto/dpr_1.25/image/vm/cd7fbde8-fdec-4557-b0cd-0d95c1d8aea1.png" style="width: 100%">
+   </div>
+   <div class="mySlides fade">
+   	<img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_1440,f_auto,ar_2880:595,q_auto:best,f_auto/dpr_1.25/image/vm/ce04dcb4-15f8-4326-aa2a-957684ee0eb5.jpg" style="width: 100">
+   </div>
+   <div
+  <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<br>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("dot");
+     for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";  
+    }
+     slideIndex++;
+     if (slideIndex > slides.length) {slideIndex = 1}    
+     for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+   setTimeout(showSlides, 3000); 
+    }
+  </script>
+     <br>
+
+      <a class="t3" href="login.html" target="_blank">BOOK NOW</a> 
+      <br
+      <p></p>
+      <br>
+      <br>
+
+             
+</body>
+</html>

@@ -1,0 +1,49 @@
+.header img {
+  float: left;
+  width: 200px;
+  
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  
+}
+.t1
+{
+	text-transform: uppercase;
+	text-align: justify;
+	font-size: 100px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: "Times New Roman", Times, serif;
+	letter-spacing: 5px;
+	color: steelblue;
+
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}

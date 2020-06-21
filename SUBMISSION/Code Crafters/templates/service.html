@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='service.css')}}">
+</head>
+<body>
+	<div class="header">
+          <div class="navbar">
+              <div class="logo">
+								<img src="{{url_for('static', filename='logo1.png')}}" height="200px" width="300px"  />
+								<!-- <h2>Crafter's Mask Detector</h2> -->
+              </div>
+              <div class="menu">
+                  <ul>
+										<li><a href="{{ url_for('index') }}">Home</a></li>
+										<li><a href="{{ url_for('service') }}">Services</a></li>
+										<li><a href="{{ url_for('about') }}">About Us</a></li>
+
+
+                  </ul>
+              </div>
+          </div>
+      </div>
+			<br><br><br><br><br>
+		<div class="container">
+			<div class="box">
+				<div class="content">
+					<h2>01</h2>
+					<h3>Free & Open Source</h3>
+					<br>
+					<p style="text-align:left">
+						<br>
+						The Crafter's Mask Detector is absolutely free for everyone, we won't charge you for using it Also, it's an open source project which is available on our git hub account Any constructive change is always welcomed!
+					</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="content">
+					<h2>02</h2>
+					<h3>Detects In Realtime</h3>
+					<br><br>
+					<p>
+					Apart from traditional mask detecting technique our module uses fast and realtime python bases computer vision techniques to display the result in realtime The results are tested to be accurate up to 92%
+				</p>
+				<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="content">
+					<h2>03</h2>
+					<h3>Reliable</h3>
+					<br><br>
+					<p>
+					The Crafter's Mask Detector Module is much more reliable & safe to use as our machine learning model is trained using 1500 'mask' & 'no mask' images where training and testing shares are 78% and 22% respectively
+				</p>
+				<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="content">
+					<h2>04</h2>
+					<h3>Accessible</h3>
+					<br><br>
+					<p>
+						Many Mask Detection Module fails when it comes to provide accessibility to non-tech individuals, But we stand for those who don't want to run scripts and import files , compiler and many
+						time taking stuffs.
+					</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+
+		</div>
+</body>
+</html>

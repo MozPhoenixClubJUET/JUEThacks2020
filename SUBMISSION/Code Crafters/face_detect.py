@@ -19,7 +19,7 @@ import winsound
 import pygame
 import urllib
 
-
+# edit the path to path on you machine
 proto_txt_path = os.path.sep.join([r"C:\Users\Ishaan\Desktop\Juet Hacks",
  "deploy.prototxt.txt"])
 starter = os.path.sep.join([r"C:\Users\Ishaan\Desktop\Juet Hacks",
@@ -28,7 +28,8 @@ proceed = os.path.sep.join([r"C:\Users\Ishaan\Desktop\Juet Hacks",
 "proceed.wav"])
 sorry = os.path.sep.join([r"C:\Users\Ishaan\Desktop\Juet Hacks",
 "sorry.wav"])
-url='http://192.168.43.1:8080/shot.jpg'
+
+# url='http://192.168.43.1:8080/shot.jpg'
 
 
 pygame.mixer.init()

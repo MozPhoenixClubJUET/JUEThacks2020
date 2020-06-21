@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Covid Dashboard</string>
+    <string name="error_txt">Click on button to search for stores.</string>
+</resources>

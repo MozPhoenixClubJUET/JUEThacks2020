@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF5FA"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Activity.handwash_home">
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:src="@drawable/handwash_icon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:fontFamily="@font/roboto"
+        android:text="Wash Your Hands, Be safe."/>
+
+    <EditText
+        android:layout_marginTop="45dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_width="match_parent"
+        android:hint="Enter Your Name"
+        android:paddingStart="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_height="60dp"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_width="match_parent"
+        android:hint="Start Time"
+        android:paddingStart="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_height="60dp"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_width="match_parent"
+        android:hint="End Time"
+        android:paddingStart="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto"
+        android:layout_margin="40dp"
+        android:text="We will give you notification to wash you hands every hour."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora"
+        android:textSize="20sp"
+        android:background="@drawable/button_bg"
+        android:textColor="#FFFFFF"
+        android:text="Let's Get Started" />
+
+</LinearLayout>

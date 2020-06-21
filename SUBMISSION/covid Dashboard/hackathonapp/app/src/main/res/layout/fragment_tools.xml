@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/handwash"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp"
+            android:src="@drawable/handwash_splash"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="Hand Wash Remainder"
+                android:textColor="#4B4B4B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Which reminds you to wash your hands after at frequent intervals."
+                android:textColor="#9B9191"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/lin1"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="Grocery Store Locator"
+                android:textColor="#4B4B4B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Which provide you the store name, address and distance around your location."
+                android:textColor="#9B9191"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:id="@+id/grocery"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp"
+            android:src="@drawable/grocery_splash"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3FBCDA"/>
+
+</RelativeLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CCF8F5F5"
+    tools:context=".Activity.tracker_home">
+
+    <TextView
+        android:id="@+id/heading"
+        android:background="#3AB3D8"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Covid19 India"
+        android:fontFamily="@font/roboto"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="28sp"/>
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_alignTop="@id/heading"
+        android:layout_alignBottom="@id/heading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_refresh_black_24dp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"/>
+
+    <ScrollView
+        android:layout_below="@id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/pb_loading_indicator"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/counter_cases"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/cases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/news_bg_item"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop = "20dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/confirmed_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:text="Confirmed"
+                            android:textColor="#FF0000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/changes_confirmed"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_mono"
+                            android:text="+4"
+                            android:textColor="#FF0000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/total_confirmed"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_mono"
+                            android:textStyle="bold"
+                            android:text="411773"
+                            android:textColor="#FF0000"
+                            android:textSize="19sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/active_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginStart="19dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:text="Active"
+                            android:textColor="#2C52E8"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/changes_active"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_mono"
+                            android:text=""
+                            android:textColor="#2C52E8"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/total_active"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_mono"
+                            android:textStyle="bold"
+                            android:text="170134"
+                            android:textColor="#2C52E8"
+                            android:textSize="19sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/recovered_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginStart="19dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:text="Recovered"
+                            android:textColor="#40C10D"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/changes_recovered"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_mono"
+                            android:text="+126"
+                            android:textColor="#40C10D"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/total_recovered"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_mono"
+                            android:textStyle="bold"
+                            android:text="228307"
+                            android:textColor="#40C10D"
+                            android:textSize="19sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/deceased_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginStart="19dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:text="Deceased"
+                            android:textColor="#515150"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/changes_deceased"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_mono"
+                            android:text="+4"
+                            android:textColor="#515150"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/total_deceased"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_mono"
+                            android:textStyle="bold"
+                            android:text="13282"
+                            android:textColor="#515150"
+                            android:textSize="19sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:src="@drawable/banner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"/>
+
+                <ImageView
+                    android:src="@drawable/banner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"/>
+
+                <ImageView
+                    android:src="@drawable/banner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/tracker_bg"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/past_data_tab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="4dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/history"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Past data"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/state_result_tab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="4dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/india"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="State-wise data"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto"
+                                android:textColor="#000000"
+                                android:textSize="17sp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.history_home">
+
+    <TextView
+        android:id="@+id/heading"
+        android:background="#8541E4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Past Data"
+        android:fontFamily="@font/roboto"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:textSize="28sp"/>
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_alignTop="@id/heading"
+        android:layout_alignBottom="@id/heading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_refresh_black_24dp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_error_message_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Some Error occured. Try Again Later."
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/heading"
+        android:orientation="horizontal"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#000000"
+            android:text="Date"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/totalconfirmed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#000000"
+            android:text="Total Confirmed"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/totalrecovered"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#000000"
+            android:text="Total Recovered"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/totaldeceased"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#000000"
+            android:text="Total Deceased"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_history"
+        android:layout_below="@id/lin2"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+</RelativeLayout>

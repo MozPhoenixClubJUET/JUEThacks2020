@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="grey_300">#60C9CCD5</color>
+    <color name="cyan_800_overlay">#03A9F4</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_90">#263238</color>
+    <color name="grey_40">#999999</color>
+    <color name="red_400">#EF5350</color>
+    <color name="red_300">#E57373</color>
+    <color name="grey_80">#37474F</color>
+</resources>

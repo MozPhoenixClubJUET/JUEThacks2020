@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="3dp">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/needHelp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            card_view:cardCornerRadius="30dp"
+
+                            card_view:cardBackgroundColor="#E0FFFF"
+                            card_view:cardElevation="10dp"
+                            card_view:cardUseCompatPadding="true">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/talk_to_us"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/talk_logo"
+                                    android:padding="23dp"
+                                    android:textColor="#77b8e5"
+                                    android:textStyle="bold" />
+
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/feeling_sick"
+                            android:layout_width="150dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            card_view:cardBackgroundColor="#E0FFFF"
+                            card_view:cardElevation="10dp"
+                            card_view:cardCornerRadius="30dp"
+
+                            card_view:cardUseCompatPadding="true">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/get_nearby_hospiatl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/hos_logo"
+                                    android:padding="23dp"
+                                    android:textColor="#77b8e5"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/who_ins"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            card_view:cardCornerRadius="30dp"
+
+                            card_view:cardBackgroundColor="#E0FFFF"
+                            card_view:cardElevation="10dp"
+                            card_view:cardUseCompatPadding="true">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/who_ins_btn"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/ins_logo"
+                                    android:padding="23dp"
+                                    android:textColor="#77b8e5"
+                                    android:textStyle="bold" />
+
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/diet"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            card_view:cardCornerRadius="30dp"
+
+                            card_view:cardBackgroundColor="#E0FFFF"
+                            card_view:cardElevation="10dp"
+                            card_view:cardUseCompatPadding="true">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/diet_btn"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/diet_logo"
+                                    android:padding="23dp"
+                                    android:textColor="#77b8e5"
+                                    android:textStyle="bold" />
+
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/website"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            card_view:cardCornerRadius="30dp"
+
+                            card_view:cardBackgroundColor="#E0FFFF"
+                            card_view:cardElevation="10dp"
+                            card_view:cardUseCompatPadding="true">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/website_btn"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/virus"
+                                    android:padding="23dp"
+                                    android:textColor="#77b8e5"
+                                    android:textStyle="bold" />
+
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:id="@+id/seperator"
+                android:layout_below="@+id/image"
+                android:background="#BEF2F3F6"/>
+
+
+            <RelativeLayout
+                android:id="@+id/date_and_time_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seperator"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/last_upadated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Last Updated : "
+                    android:textColor="#1686DF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/last_upadated"
+                    android:layout_toRightOf="@+id/last_upadated"
+                    android:text="12/09/20,12:20"
+                    android:textColor="#E60F0F"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/allcasecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_and_time_container"
+                android:layout_marginTop="25dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/allcases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    card_view:cardBackgroundColor="#E6E6FA"
+                    card_view:cardElevation="10dp"
+                    card_view:cardUseCompatPadding="true">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/icon_for_total_patient"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/total" />
+
+                        <TextView
+                            android:id="@+id/allcasenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/icon_for_total_patient"
+                            android:layout_alignBaseline="@+id/icon_for_total_patient"
+                            android:layout_centerInParent="true"
+                            android:padding="2dp"
+                            android:text="12456"
+                            android:textColor="#A81FBF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/allcasetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/allcasenumber"
+                            android:layout_centerInParent="true"
+                            android:padding="2dp"
+                            android:text="Tested "
+                            android:textColor="#A81FBF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/allcasecontainer"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/confirmedcases"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        card_view:cardCornerRadius="15dp"
+                        card_view:cardBackgroundColor="#FFFAFA"
+
+                        card_view:cardElevation="10dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/icon_for_confirmed_patient"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/final_confirmed_patient" />
+
+                            <TextView
+                                android:id="@+id/confirmedcasenumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_for_confirmed_patient"
+                                android:layout_centerHorizontal="true"
+                                android:padding="2dp"
+                                android:text="12456"
+                                android:textColor="#D1DF1912"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/confirmedcasetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/confirmedcasenumber"
+                                android:layout_centerHorizontal="true"
+                                android:padding="2dp"
+                                android:text="Confirmed"
+                                android:textColor="#D1DF1912"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/activecases"
+                        android:layout_width="0dp"
+                        card_view:cardCornerRadius="15dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        card_view:cardBackgroundColor="#F0FFFF"
+                        card_view:cardElevation="10dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/icon_for_active_patient"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/final_active_patient" />
+
+                            <TextView
+                                android:id="@+id/activecasenumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_for_active_patient"
+                                android:layout_centerHorizontal="true"
+                                android:padding="2dp"
+                                android:text="12456"
+                                android:textColor="#D11224ED"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/activecasetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/activecasenumber"
+                                android:layout_centerHorizontal="true"
+                                android:padding="2dp"
+                                android:text="Active"
+                                android:textColor="#D11224ED"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/recoveredcases"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="15dp"
+
+                        android:layout_weight="1"
+                        card_view:cardBackgroundColor="#F0FFF0"
+
+                        card_view:cardElevation="10dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/icon_for_recovered_patient"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/recovered_patient2" />
+
+                            <TextView
+                                android:id="@+id/recoveredcasenumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_for_recovered_patient"
+                                android:layout_centerHorizontal="true"
+                                android:padding="2dp"
+                                android:text="12456"
+                                android:textColor="#1FAA24"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/recoveredcasetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/recoveredcasenumber"
+                                android:layout_centerHorizontal="true"
+                                android:padding="2dp"
+                                android:text="Recovered"
+                                android:textColor="#1FAA24"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/deathcases"
+                        card_view:cardCornerRadius="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        card_view:cardBackgroundColor="#D3D3D3"
+                        card_view:cardElevation="10dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/icon_for_dead_patient"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/death" />
+
+                            <TextView
+                                android:id="@+id/deathcasenumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_for_dead_patient"
+                                android:layout_centerHorizontal="true"
+                                android:padding="2dp"
+                                android:text="12456"
+                                android:textColor="#554949"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/deathcasetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/deathcasenumber"
+                                android:layout_centerHorizontal="true"
+                                android:padding="2dp"
+                                android:text="Deaths"
+                                android:textColor="#F9554949"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

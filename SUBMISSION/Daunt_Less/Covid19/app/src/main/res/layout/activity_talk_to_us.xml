@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".talk_to_us">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/sym_gif"
+        android:src="@drawable/coronagif"
+        android:background="#6D2196F3"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+
+        android:layout_below="@+id/sym_gif"
+        android:text="What are your symptoms ?"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/symptom_question"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptom_question"
+        android:padding="2dp"
+        android:id="@+id/symptom1"
+        android:textColor="#1C7FCD"
+        android:layout_marginLeft="10dp"
+        android:text="Fever"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptom1"
+        android:padding="2dp"
+        android:textColor="#1C7FCD"
+
+        android:id="@+id/symptom2"
+        android:layout_marginLeft="10dp"
+        android:text="Dry Cough"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptom2"
+        android:padding="2dp"
+        android:id="@+id/symptom3"
+        android:textColor="#1C7FCD"
+
+        android:layout_marginLeft="10dp"
+        android:text="Tiredness"
+        android:textSize="18sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptom3"
+        android:text="Done"
+        android:background="#F0FFFF"
+        android:textSize="14sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:id="@+id/done"
+        android:onClick="suggest_btn"/>
+
+
+</RelativeLayout>

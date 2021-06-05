@@ -1,27 +1,23 @@
 .header img {
   float: left;
   width: 200px;
-  
+
   background: #555;
 }
 
 .header h1 {
   position: relative;
   top: 18px;
-  
 }
-.t1
-{
-	text-transform: uppercase;
-	text-align: justify;
-	font-size: 100px;
-	font-weight: bold;
-	font-style: italic;
-	font-family: "Times New Roman", Times, serif;
-	letter-spacing: 5px;
-	color: steelblue;
-
-
+.t1 {
+  text-transform: uppercase;
+  text-align: justify;
+  font-size: 100px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 5px;
+  color: steelblue;
 }
 
 ul {
@@ -92,20 +88,31 @@ li a:hover {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px;
+  }
 }
-a:link, a:visited {
+a:link,
+a:visited {
   background-color: #f44336;
   color: white;
   padding: 24px 25px;
@@ -114,19 +121,19 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   background-color: red;
 }
-.t3
-{
-	position: absolute;
-	left: 700px;
+.t3 {
+  position: absolute;
+  left: 700px;
 }
 
 .symtom {
   font-size: 40px;
   font-weight: bold;
-  background-color:  #9df2f1;
+  background-color: #9df2f1;
 }
 
 .symtombody {
@@ -134,66 +141,69 @@ a:hover, a:active {
   height: 600px;
 }
 #demo {
-  max-width: 75%;margin: 3%; font-size: 40px; float: left;
+  max-width: 75%;
+  margin: 3%;
+  font-size: 40px;
+  float: left;
 }
 
 button,
 button::after {
--webkit-transition: all 0.3s;
--moz-transition: all 0.3s;
--o-transition: all 0.3s;
-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 button {
-background: none;
-border: 4px solid black;
-border-radius: 10px;
-color: 'black';
-display: block;
-font-size: 1em;
-font-weight: bold;
-margin: 2em auto;
-padding: 2em 4em;
-position: relative;
-text-transform: uppercase;
+  background: none;
+  border: 4px solid black;
+  border-radius: 10px;
+  color: "black";
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 2em auto;
+  padding: 2em 4em;
+  position: relative;
+  text-transform: uppercase;
 }
 button::before,
 button::after {
-background: #fff;
-content: '';
-position: absolute;
-z-index: -1;
+  background: #fff;
+  content: "";
+  position: absolute;
+  z-index: -1;
 }
 button:hover {
-color: #29f2e4;
+  color: #29f2e4;
 }
 .button1::after {
-height: 0;
-left: 0;
-top: 0;
-width: 100%;
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 .button1:hover:after {
-height: 100%;
+  height: 100%;
 }
 .button2::after {
-height: 100%;
-left: 0;
-top: 0;
-width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
 }
 .button2:hover:after {
-width: 100%;
+  width: 100%;
 }
 .button3::after {
-height: 0;
-left: 50%;
-top: 50%;
-width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
 }
 .button3:hover:after {
-height: 100%;
-left: 0;
-top: 0;
-width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
 }

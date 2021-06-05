@@ -1,16 +1,16 @@
 # COVID-19 Predictor
 
- A simple web application that predicts the chances for a person's being infected by COVID-19 based on symptoms.
- 
- [Preview on Heroku](http://covid-predict-app.herokuapp.com)
- 
- ## Technologies used
- 
- - HTML, CSS, and JavaScript for the public webpages.
- - Bootstrap and jQuery for enhancing the front-end.
- - Flask for the back-end server and machine learning model handling in Python.
- - SQL for storing the logs in an SQLite3 database.
- - NewsAPI (http://newsapi.org) for fetching relevant news.
+A simple web application that predicts the chances for a person's being infected by COVID-19 based on symptoms.
+
+[Preview on Heroku](http://covid-predict-app.herokuapp.com)
+
+## Technologies used
+
+- HTML, CSS, and JavaScript for the public webpages.
+- Bootstrap and jQuery for enhancing the front-end.
+- Flask for the back-end server and machine learning model handling in Python.
+- SQL for storing the logs in an SQLite3 database.
+- NewsAPI (http://newsapi.org) for fetching relevant news.
 
 # Setting Up the Application Server
 
@@ -37,51 +37,54 @@
 - Add the NewsAPI API Key to _apikey.py_. You can obtain one from http://newsapi.org.
 
   _apikey.py_:
+
   ```
   apikey = 'YOUR_API_KEY_HERE'
   ```
-  
+
   This isn't a requirement unless you wish to display recent news.
- 
+
 - Acquire the data in the form of a CSV file named _Data.csv_. Else, execute _dummydata.py_ to generate dummy data.
-  
-  ```python dummydata.py```
- 
+
+  `python dummydata.py`
+
   _Data.csv_:
-   ```
-  fever,BodyPain,age,RunnyNose,diffBreath,infectionProb  
-  99.6,0,95,0,1,0  
-  102.1,0,3,1,1,0  
+
+  ```
+  fever,BodyPain,age,RunnyNose,diffBreath,infectionProb
+  99.6,0,95,0,1,0
+  102.1,0,3,1,1,0
   ...
   ```
-  
-  | Parameter | Value |
-  |:------------------:|:---------:|
-  | fever | Body temperature in °F |
-  | BodyPain | Body pain: 0 for none, 1 for severe |
-  | age | The person's age |
-  | RunnyNose | Whether or not the person has a runny nose: 0 for no, 1 for yes |
-  | diffBreath | Whether or not the person faces difficulty in breathing: 0 for none, 1 for little, 2 for severe |
-  | infectionProb | Whether or not the person is infected: 0 for not infected, 1 for infected |
+
+  |   Parameter   |                                              Value                                              |
+  | :-----------: | :---------------------------------------------------------------------------------------------: |
+  |     fever     |                                     Body temperature in °F                                      |
+  |   BodyPain    |                               Body pain: 0 for none, 1 for severe                               |
+  |      age      |                                        The person's age                                         |
+  |   RunnyNose   |                 Whether or not the person has a runny nose: 0 for no, 1 for yes                 |
+  |  diffBreath   | Whether or not the person faces difficulty in breathing: 0 for none, 1 for little, 2 for severe |
+  | infectionProb |            Whether or not the person is infected: 0 for not infected, 1 for infected            |
 
 - Get the model trained by executing _training.py_.
 
-  ```python training.py```
-  
-- Host the Flask server by executing ```flask run```.
+  `python training.py`
 
-  ```flask run```
-  
+- Host the Flask server by executing `flask run`.
+
+  `flask run`
+
   By default, the server will be live at http://localhost:5000/ in debug mode. Other settings can be modified as per requirement.
 
 # Credits
 
 Authors (BugBusters):
- - [Param Siddharth](https://www.paramsid.com/)
- - [Ritesh Yadav](https://github.com/DARK-art108)
- - [Harsh Marolia](https://github.com/HarshMarolia)
- - Sushant Sharma
- - [Paridhi Malav](https://github.com/paridhi1314)
+
+- [Param Siddharth](https://www.paramsid.com/)
+- [Ritesh Yadav](https://github.com/DARK-art108)
+- [Harsh Marolia](https://github.com/HarshMarolia)
+- Sushant Sharma
+- [Paridhi Malav](https://github.com/paridhi1314)
 
 Favicon obtained from https://findicons.com.  
 News API from http://newsapi.org.

@@ -1,17 +1,61 @@
-{% extends 'layout.html' %}
-{% block title %}Result{% endblock %}
-{% block main %}
+{% extends 'layout.html' %} {% block title %}Result{% endblock %} {% block main
+%}
 <h2 class="mt-3">Coronavirus Predictor - Neerog Jeevan</h2>
-          <p>The predictor says that the probability
-          of your being infected by COVID-19 is {{inf}}%.</p> 
-          <div style='height: 30px; font-weight: bold; font-size: 20px; background-color: #AAA;' class='progress'><div class='progress-bar progress-bar-animated progress-bar-striped bg-{% if inf < 30 %}success{% elif inf < 50 %}info{% elif inf < 70 %}warning{% else %}danger{% endif %}' role='progressbar' style='width: {{ inf }}%;'>
-              {{ inf }}%
-          </div></div>
-          {% if inf > 75 %}<div class='card text-center text-white bg-danger mt-2 mb-2'>
-              <div class='card-body'>
-                  <h5 class='card-title'>Alert!</h5>
-                  Your conditions are severe! Approach the nearest hospital as soon as possible.
-              </div>
-          </div>{% endif %}
-         <a href="/predict"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Once More</button></a> 
+<p>
+  The predictor says that the probability of your being infected by COVID-19 is
+  {{inf}}%.
+</p>
+<div
+  style="
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #aaa;
+  "
+  class="progress"
+>
+  <div
+    class="
+      progress-bar progress-bar-animated progress-bar-striped
+      bg-{%
+      if
+      inf
+      <
+      30
+      %}success{%
+      elif
+      inf
+      <
+      50
+      %}info{%
+      elif
+      inf
+      <
+      70
+      %}warning{%
+      else
+      %}danger{%
+      endif
+      %}
+    "
+    role="progressbar"
+    style="width: {{ inf }}%;"
+  >
+    {{ inf }}%
+  </div>
+</div>
+{% if inf > 75 %}
+<div class="card text-center text-white bg-danger mt-2 mb-2">
+  <div class="card-body">
+    <h5 class="card-title">Alert!</h5>
+    Your conditions are severe! Approach the nearest hospital as soon as
+    possible.
+  </div>
+</div>
+{% endif %}
+<a href="/predict"
+  ><button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+    Once More
+  </button></a
+>
 {% endblock %}

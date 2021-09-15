@@ -1,32 +1,31 @@
-
 <html>
   <head>
     <title>CodeCrafters- Juet Hacks</title>
 
-   <style>
-   #container {
-    position:relative;
-}
+    <style>
+      #container {
+        position: relative;
+      }
 
-#img2 {
-    position: absolute;
-    left: 430px;
-    top: 50px;
-
-}
-   </style>
+      #img2 {
+        position: absolute;
+        left: 430px;
+        top: 50px;
+      }
+    </style>
   </head>
   <body>
-
     <div id="container">
       <video autoplay loop muted id="img1">
-          <source src="{{url_for('static', filename='video.mp4')}}" type="video/mp4">
+        <source
+          src="{{url_for('static', filename='video.mp4')}}"
+          type="video/mp4"
+        />
       </video>
-        <!-- <img src="{{url_for('static', filename='back.jpeg')}}" id="img1" /> -->
+      <!-- <img src="{{url_for('static', filename='back.jpeg')}}" id="img1" /> -->
       <center>
-        <img src="{{ url_for('video_feed') }}" id="img2"  />
+        <img src="{{ url_for('video_feed') }}" id="img2" />
       </center>
     </div>
-
   </body>
 </html>

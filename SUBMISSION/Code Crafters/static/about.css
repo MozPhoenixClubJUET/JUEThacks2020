@@ -1,118 +1,111 @@
-body{
-top:0;
-margin: 0;
-height: 800px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size:1rem;
-font-weight:normal;
-	background: linear-gradient(to right, #2193b0 , #6dd5ed);
+body {
+  top: 0;
+  margin: 0;
+  height: 800px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
 }
-.logo{
-/* background-color: #fff; */
-margin-top: -58px;
+.logo {
+  /* background-color: #fff; */
+  margin-top: -58px;
 }
-#nav
-{
-    background-color:#2ea2eb;
-    width: 100%;
-    height:63px;
+#nav {
+  background-color: #2ea2eb;
+  width: 100%;
+  height: 63px;
 }
-.container1
-{
-   display: block;
-   text-align: center;
+.container1 {
+  display: block;
+  text-align: center;
 
-margin: 7px 280px;
+  margin: 7px 280px;
 }
-.container2
-{
-    display: flex;
-    top: 0;
-    margin: 47px 0px;
-
+.container2 {
+  display: flex;
+  top: 0;
+  margin: 47px 0px;
 }
-#box
-{
-        border: none   ;
-        border-radius: 31px;
-        padding: 33px;
-        height: 520px;
-        width: 300px;
-        margin: 10px 19px;
+#box {
+  border: none;
+  border-radius: 31px;
+  padding: 33px;
+  height: 520px;
+  width: 300px;
+  margin: 10px 19px;
 
-        background:linear-gradient(to right, #eecda3 ,  #ef629f);
+  background: linear-gradient(to right, #eecda3, #ef629f);
 }
 
-#one
-{
+#one {
   align-items: center;
-    width: 50%;
-    border-radius: 100px;
-    margin: auto;
-    height: 140px;
+  width: 50%;
+  border-radius: 100px;
+  margin: auto;
+  height: 140px;
 }
 
-
-.header{
-    background-color: black;
-    width: 100%;
-    height: 10vh;
-    line-height: 5vh;
+.header {
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+  line-height: 5vh;
 }
-.navbar{
-    display: flex;
-    justify-content: space-around;
+.navbar {
+  display: flex;
+  justify-content: space-around;
 }
-h2{
-    color: #fff;
+h2 {
+  color: #fff;
 }
-ul{
-    display: flex;
-    list-style: none;
+ul {
+  display: flex;
+  list-style: none;
 }
-ul li a{
-    position: relative;
-    color: #fff;
-    padding: 10px 10px;
-    text-decoration: none;
-    transition: all .5s;
+ul li a {
+  position: relative;
+  color: #fff;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: all 0.5s;
 }
-ul li a:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .5s;
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
 }
-ul li a:hover:before{
-    transform: scaleX(1);
-    z-index: 1;
+ul li a:hover:before {
+  transform: scaleX(1);
+  z-index: 1;
 }
-ul li a:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .5s;
+ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
 }
-ul li a:hover:after{
-    transform: scaleX(1);
-    z-index: 1;
+ul li a:hover:after {
+  transform: scaleX(1);
+  z-index: 1;
 }
-$redColor: rgba(244,67,54,1);
-$blueColor:rgba(33,150,243,1);
+$redColor: rgba(244, 67, 54, 1);
+$blueColor: rgba(33, 150, 243, 1);
 
 .flex-center {
   width: 100%;
@@ -126,12 +119,12 @@ $blueColor:rgba(33,150,243,1);
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .icon-3d {
@@ -141,7 +134,7 @@ $blueColor:rgba(33,150,243,1);
   color: #fff;
   &:hover {
     -webkit-animation: icon3d 200ms infinite;
-          animation: icon3d 200ms infinite;
+    animation: icon3d 200ms infinite;
   }
 }
 

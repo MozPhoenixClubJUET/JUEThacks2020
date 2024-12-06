@@ -54,7 +54,7 @@ prometheus-client==0.8.0
 prompt-toolkit==3.0.5
 ptyprocess==0.6.0
 pygame==2.0.0.dev8
-Pygments==2.6.1
+Pygments==2.7.4
 pyjnius==1.2.1
 pylint==2.5.2
 pyparsing==2.4.7

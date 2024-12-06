@@ -1,27 +1,23 @@
 .header img {
   float: left;
   width: 200px;
-  
+
   background: #555;
 }
 
 .header h1 {
   position: relative;
   top: 18px;
-  
 }
-.t1
-{
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 100px;
-	font-weight: bold;
-	font-style:italic; ;
-	font-family: "Times New Roman", Times, serif;
-	letter-spacing: 5px;
-	color: ;
-
-
+.t1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 5px;
+  color: ;
 }
 
 ul {
@@ -92,20 +88,31 @@ li a:hover {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px;
+  }
 }
-a:link, a:visited {
+a:link,
+a:visited {
   background-color: #f44336;
   color: white;
   padding: 24px 25px;
@@ -114,11 +121,11 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   background-color: red;
 }
-.t3
-{
-	position: absolute;
-	left: 700px;
+.t3 {
+  position: absolute;
+  left: 700px;
 }

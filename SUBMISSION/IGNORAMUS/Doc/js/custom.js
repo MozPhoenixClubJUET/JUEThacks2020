@@ -1,7 +1,5 @@
-$(function() {
-"use strict";
-    
-    $('#nav').singlePageNav();
-    
+$(function () {
+  "use strict";
 
+  $("#nav").singlePageNav();
 });

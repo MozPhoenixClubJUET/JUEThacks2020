@@ -1,57 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="{{url_for('static', filename='face.css')}}" rel="stylesheet">
-  <!--  -->
-  <title>Crafter's FMD</title>
-</head>
-<body>
-  <div class="header">
-          <div class="navbar">
-              <div class="logo">
-                <img src="{{url_for('static', filename='logo1.png')}}" height="200px" width="300px"  />
-                <!-- <h2>Crafter's Mask Detector</h2> -->
-              </div>
-              <div class="menu">
-                  <ul>
-                      <li><a href="{{ url_for('index') }}">Home</a></li>
-                      <li><a href="{{ url_for('service') }}">Services</a></li>
-                      <li><a href="{{ url_for('about') }}">About Us</a></li>
-
-
-                  </ul>
-              </div>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="{{url_for('static', filename='face.css')}}" rel="stylesheet" />
+    <!--  -->
+    <title>Crafter's FMD</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="{{url_for('static', filename='logo1.png')}}"
+            height="200px"
+            width="300px"
+          />
+          <!-- <h2>Crafter's Mask Detector</h2> -->
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('service') }}">Services</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+          </ul>
+        </div>
       </div>
-  <section>
+    </div>
+    <section>
+      <h1 style="padding-top: 100px; padding-bottom: 100px; margin-left: 70px">
+        Instructions
+        <li>1. Please place your face properly infront of the camera</li>
+        <li>2. Ensure proper lightening on the face</li>
+        <li>
+          3. Do not try to cover your face with hand/ cloth <br />
+          &nbsp &nbsp you would be detected
+        </li>
+        <li>4. Please maintain a distance of 6 ft. to ensure safity</li>
+        <li>
+          5. If you are detected without mask then please wear <br />
+          &nbsp &nbsp one or we may not permt you inside
+        </li>
+      </h1>
 
-<h1 style="padding-top: 100px;padding-bottom: 100px; margin-left:70px">
-Instructions
-<li>
-1.  Please place your face properly infront of the camera
-</li>
-<li>
-2.  Ensure proper lightening on the face
-</li>
-<li>
-3.  Do not try to cover your face with hand/ cloth <br> &nbsp &nbsp  you would be detected
-</li>
-<li>
-4. Please maintain a distance of 6 ft. to ensure safity
-</li>
-<li>
-5. If you are detected without mask then please wear <br> &nbsp &nbsp one or we may not permt you inside
-</li>
-</h1>
-
-
-  <img src="{{ url_for('video_feed') }}" style="border-raduis:10px; padding-left:30px" height="473px"  />
-
-
-</section>
-</body>
+      <img
+        src="{{ url_for('video_feed') }}"
+        style="border-raduis: 10px; padding-left: 30px"
+        height="473px"
+      />
+    </section>
+  </body>
 </html>

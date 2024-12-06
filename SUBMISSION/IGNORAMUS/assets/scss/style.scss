@@ -28,31 +28,31 @@
 */
 
 // Default
-	@import 'variables';
-	@import 'mixins';
-	@import 'overlay';
-	@import 'common';
-	@import 'color';
+@import "variables";
+@import "mixins";
+@import "overlay";
+@import "common";
+@import "color";
 
 // Homepage1
-	@import 'headerMenu';
-	@import 'h1-hero';
-	@import 'categories';
-	@import 'count_down';
+@import "headerMenu";
+@import "h1-hero";
+@import "categories";
+@import "count_down";
 
-	@import 'about';
-	@import 'popular_sub';
-	@import 'team';
-	@import 'testimonial';
-	@import 'footer';
+@import "about";
+@import "popular_sub";
+@import "team";
+@import "testimonial";
+@import "footer";
 
 // inner Page
-	@import 'services';
-	@import 'all_course';
+@import "services";
+@import "all_course";
 
 // Default Element Page
-	@import 'blog_page';
-	@import 'contact';
-	@import 'bradcam';
-	@import 'extend';
-	@import 'elements';
+@import "blog_page";
+@import "contact";
+@import "bradcam";
+@import "extend";
+@import "elements";
